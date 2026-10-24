@@ -1,0 +1,21 @@
+message,category
+"My product arrived broken.",complaint
+"The item I received is defective.",complaint
+"I am disappointed with the quality.",complaint
+"The delivery packaging was damaged.",complaint
+"The product stopped working after one day.",complaint
+"I want a refund for my purchase.",refund_request
+"Please return my money.",refund_request
+"Can I get a refund for this order?",refund_request
+"I would like to cancel my purchase and get a refund.",refund_request
+"The item is damaged, and I want my money back.",refund_request
+"Does this phone support wireless charging?",product_question
+"What is the battery capacity of this laptop?",product_question
+"Is this product available in blue?",product_question
+"Does this camera record in 4K?",product_question
+"What material is this bag made from?",product_question
+"What are your store's opening hours?",general_inquiry
+"Where is your shop located?",general_inquiry
+"How can I contact customer support?",general_inquiry
+"Do you deliver to Chennai?",general_inquiry
+"What payment methods do you accept?",general_inquiry
