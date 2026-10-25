@@ -94,27 +94,13 @@ if st.button("Classify Message", type="primary"):
     if not message.strip():
         st.warning("Please enter a customer message.")
     else:
-        # Predefined results for testing the interface
-        demo_results = {
-            "my order arrived damaged. i am very disappointed.": "complaint",
-            "i want a refund for my order.": "refund_request",
-            "what is the battery life of this laptop?": "product_question",
-            "hello, i need help with my account.": "general_inquiry"
-        }
+        try:
+            with st.spinner("Analyzing your message with Gemini AI..."):
+                category = classify_message(message)
 
-        normalized_message = message.strip().lower()
-
-        if normalized_message in demo_results:
-            category = demo_results[normalized_message]
-
-            st.success("Demo classification completed!")
+            st.success("Classification completed!")
             st.subheader("Predicted Category")
             st.markdown(f"### {category.replace('_', ' ').title()}")
-            st.caption("Demo result — this is a predefined prediction, not an AI-generated result.")
-        else:
-            st.info(
-                "This message isn't included in the demo examples. "
-                "Gemini API classification is temporarily unavailable "
-                "because your daily quota has been exhausted."
-            )
 
+        except Exception as e:
+            st.error(f"Classification failed: {e}")

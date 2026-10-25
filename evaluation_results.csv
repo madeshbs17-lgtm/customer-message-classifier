@@ -1,0 +1,11 @@
+message,category,predicted_category,correct
+My order arrived damaged. I am very disappointed.,complaint,complaint,True
+The product stopped working after two days.,complaint,complaint,True
+I have been waiting for my delivery for a week.,complaint,complaint,True
+I want a refund for my recent purchase.,refund_request,refund_request,True
+"The item is defective, and I would like my money back.",refund_request,refund_request,True
+Please cancel my order and refund the payment.,refund_request,ERROR,False
+What is the battery life of this laptop?,product_question,ERROR,False
+Does this phone support wireless charging?,product_question,product_question,True
+How can I contact customer support?,general_inquiry,general_inquiry,True
+What are your business hours?,general_inquiry,general_inquiry,True
